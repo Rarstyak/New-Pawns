@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PawnKindDefs>
+	<PawnKindDef Class="New-Pawns.PawnKindDef" Abstract="True" Name="SlimeBase">
+	
+	<PawnKindDef Name="Basic Slime" Class="New-Pawns.PawnKindDef" ParentName="SlimeBase">
+		<defName>Basic Slime</defName>
+		<label>basicslime</label>
+		<race>BasicSlime</race>
+		<combatPower>15</combatPower>
+		<defaultFactionType>Slime</defaultFactionType>
+		<wildSpawn_EcoSystemWeight>1</wildSpawn_EcoSystemWeight>
+		<wildSpawn_spawnWild>true</wildSpawn_spawnWild>
+		<wildSpawn_GroupSizeRange>
+			<min>5</min>
+			<max>25</max>
+		</wildSpawn_GroupSizeRange>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Basic Slime</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>1</drawSize>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Basic Slime</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>1.25</drawSize>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Basic Slime</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>1.50</drawSize>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+<PawnKindDefs>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FactionDefs>
+	<FactionDef>
+		<defName>Slime</defName>
+		<label>slime colony</label>
+		<description>A hostile primitive colony of slimes.</description>
+		<pawnsPlural>slimes</pawnsPlural>
+		<requiredCountAtGameStart>1</requiredCountAtGameStart>
+		<fixedName>a slime colony</fixedName>
+		<raidCommonality>200</raidCommonality>
+		<leaderTitle>progenitor</leaderTitle>
+		<humanlikeFaction>false</humanlikeFaction>
+		<hidden>true</hidden>
+		<canFlee>false</canFlee>
+		<techLevel>Neolithic</techLevel>
+		<earliestRaidDays>5</earliestRaidDays>
+		<startingGoodwill>
+			<min>-100</min>
+			<max>-100</max>
+		</startingGoodwill>
+		<mustStartOneEnemy>true</mustStartOneEnemy>
+		<naturalColonyGoodwill>
+			<min>-100</min>
+			<max>-100</max>
+		</naturalColonyGoodwill>
+		<pawnGroupMakers>
+			<li>
+				<options>
+					<li>
+						<selectionWeight>100</selectionWeight>
+						<kind>BasicSlime</kind>
+					</li>
+				</options>
+			</li>
+		</pawnGroupMakers>
+	<homeIconPath>World/FactionHomes/DefaultHome</homeIconPath>
+	<homeIconColor>(0,200,0)</homeIconColor>
+	</FactionDef>
+</FactionDefs>

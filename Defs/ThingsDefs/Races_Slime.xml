@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+-<Defs>
+	-<ThingDef Abstract="True" Name="BasePawn">
+	<thingClass>Pawn</thingClass>
+	<category>Pawn</category>
+	<selectable>true</selectable>
+	<tickerType>Normal</tickerType>
+	<altitudeLayer>Pawn</altitudeLayer>
+	<useHitPoints>false</useHitPoints>
+	<hasTooltip>true</hasTooltip>
+	<soundImpactDefault>BulletImpactFlesh</soundImpactDefault>
+		-<inspectorTabs>
+			<li>ITab_Pawn_Health</li>
+			<li>ITab_Pawn_Needs</li>
+			<li>ITab_Pawn_Character</li>
+			<li>ITab_Pawn_Training</li>
+				<!--li>ITab_Pawn_Gear</li-->
+			<li>ITab_Pawn_Guest</li>
+			<li>ITab_Pawn_Prisoner</li>
+		</inspectorTabs>
+	-<comps>
+		-<li>
+			<compClass>CompAttachBase</compClass>
+		</li>
+	</comps>
+	<drawGUIOverlay>true</drawGUIOverlay>
+	</ThingDef>
+	
+-	<ThingDef Abstract="True" Name="BaseSlime" ParentName="BasePawn">
+-	<statBases>
+		<Flammability>0.50</Flammability>
+		<MarketValue>5</MarketValue>
+		<LeatherAmount>1</LeatherAmount>
+	</statBases>
+	-<race>
+		<thinkTree>Animal</thinkTree>
+		<minFoodPreferability>Plant</minFoodPreferability>
+		<isFlesh>true</isFlesh>
+		<hasGenders>true</hasGenders>
+		<nameGenerator>NamerAnimalGeneric</nameGenerator>
+		<manhunterOnDamageChance>0.0125</manhunterOnDamageChance>
+		<nameOnNuzzleChance>0.5</nameOnNuzzleChance>
+		-<hediffGiverSets>
+			<li>OrganicStandard</li>
+		</hediffGiverSets>
+	</race>
+</ThingDef>
+
+<ThingDef ParentName="BaseSlime">
+	<defName>Basic Slime</defName>
+	<label>basicslime</label>
+	<description>The most standard of all slimes.</description>
+	<statBases>
+		<MoveSpeed>2.1</MoveSpeed>
+		<MarketValue>5</MarketValue>
+		<LeatherAmount>1</LeatherAmount>
+	</statBases>
+	<verbs>
+		<verbClass>Verb_MeleeAttack</verbClass>
+		<defaultCooldownTicks>100</defaultCooldownTicks>
+		<meleeDamageBaseAmount>3</meleeDamageBaseAmount>
+		<meleeDamageDef>Blunt</meleeDamageDef>
+		<linkedBodyPartsGroup>Body</linkedBodyPartsGroup>
+	</verbs>
+	<race>
+		<body>SlimeLike</body>
+		<baseBodySize>0.2</baseBodySize>
+		<baseHungerRate>0.10</baseHungerRate>
+		<baseHealthScale>0.3</baseHealthScale>
+		<meatLabel>slime meat</meatLabel>
+		<diet>Omnivorous</diet>
+		<wildness>0.95</wildness>
+		<manhunterOnTameFailChance>0.01</manhunterOnTameFailChance>
+		<manhunterOnDamageChance>1</manhunterOnDamageChance>
+		<nuzzlePower>0.4</nuzzlePower>
+		<nuzzleChancePerHour>0</nuzzleChancePerHour>
+		<lifeExpectancy>10</lifeExpectancy>
+		<lifeStageAgs>
+			<li>
+				<def>SlimeBaby</def>
+				<minAge>0</minAge>
+			</li>
+			<li>
+				<def>SlimeJuvenile</def>
+				<minAge>0.03</minAge>
+			</li>
+			<li>
+				<def>SlimeAdult</def>
+				<minAge>0.4</minAge>
+			</li>
+	</race>
+</ThingDef>
