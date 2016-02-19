@@ -17,19 +17,19 @@
 		<lifeStages>
 			<li>
 				<bodyGraphicData>
-					<texPath>Basic Slime</texPath>
+					<texPath>BasicSlime</texPath>
 					<graphicClass>Graphic_Multi</graphicClass>
 					<drawSize>1</drawSize>
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>Basic Slime</texPath>
+					<texPath>BasicSlime</texPath>
 					<graphicClass>Graphic_Multi</graphicClass>
 					<drawSize>1.25</drawSize>
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>Basic Slime</texPath>
+					<texPath>BasicSlime</texPath>
 					<graphicClass>Graphic_Multi</graphicClass>
 					<drawSize>1.50</drawSize>
 			</li>

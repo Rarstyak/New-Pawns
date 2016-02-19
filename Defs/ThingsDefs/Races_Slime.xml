@@ -74,7 +74,7 @@
 		<manhunterOnDamageChance>1</manhunterOnDamageChance>
 		<nuzzlePower>0.4</nuzzlePower>
 		<nuzzleChancePerHour>0</nuzzleChancePerHour>
-		<lifeExpectancy>10</lifeExpectancy>
+		<lifeExpectancy>5</lifeExpectancy>
 		<lifeStageAgs>
 			<li>
 				<def>SlimeBaby</def>
@@ -82,11 +82,11 @@
 			</li>
 			<li>
 				<def>SlimeJuvenile</def>
-				<minAge>0.03</minAge>
+				<minAge>0.05</minAge>
 			</li>
 			<li>
 				<def>SlimeAdult</def>
-				<minAge>0.4</minAge>
+				<minAge>0.25</minAge>
 			</li>
 	</race>
 </ThingDef>
